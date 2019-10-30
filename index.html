@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['bar'] });
+        google.charts.setOnLoadCallback(drawChart); function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['tarefa', 'tempo'], ['comprar', '1'], ['limpar', '30'], ['cozinhar', '40']
+            ]); var options = {
+                chart: {
+                    title: 'Teste',
+                    subtitle: 'Teste2',
+                }
+            };
+            var chart = new google.charts.Bar(document.getElementById('bar'));
+            chart.draw(data, google.charts.Bar.convertOptions(options));
+        }
+    </script>
+</head>
+
+<body>
+    <div id="bar" style="width: 97%; height: 99%;"></div>
+</body>
+
+</html>
