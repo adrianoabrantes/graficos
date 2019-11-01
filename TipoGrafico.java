@@ -1,3 +1,5 @@
+package br.com.empresa.graficos;
+
 public enum TipoGrafico {
   BAR("bar"), LINE("line"), PIE("pie");
 

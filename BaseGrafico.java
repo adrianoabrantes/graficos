@@ -1,3 +1,5 @@
+package br.com.empresa.graficos;
+
 import java.io.Serializable;
 
 /**
